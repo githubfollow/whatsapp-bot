@@ -10,8 +10,7 @@
     "api",
     "bot",
     "client",
-    "node",
-    "typescript"
+    "node"
   ],
   "bugs": {
     "url": "https://github.com/caioagiani/whatsapp-bot/issues"
@@ -35,11 +34,6 @@
       "name": "Ranielly Ferreira",
       "email": "eu@raniellyferreira.com.br",
       "url": "https://github.com/raniellyferreira"
-    },
-    {
-      "name": "Caio Agiani",
-      "email": "caio.agiani14@gmail.com",
-      "url": "https://www.linkedin.com/in/caioagiani"
     }
   ],
   "scripts": {
@@ -52,7 +46,7 @@
     "puppeteer": "^3.0.4",
     "qr-image": "^3.2.0",
     "qrcode-terminal": "^0.12.0",
-    "whatsapp-web.js": "^1.12.4"
+    "whatsapp-web.js": "^1.12.0"
   },
   "devDependencies": {
     "@types/axios": "^0.14.0",
