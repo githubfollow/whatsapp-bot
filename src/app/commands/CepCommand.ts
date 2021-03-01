@@ -17,11 +17,11 @@ export default class EconomyCommand {
 
     try {
       const { data }: IResponse = await axios.get<IServerData>(
-        `https://brasilapi.com.br/api/cep/v1/${setCep}`
+        `https://viacep.com.br/ws/${setCep}/json/unicode/`
       );
 
       return msg.reply(
-        `*CEP*: ${data.cep}\n*Logradouro*: ${data.street}\n*Bairro*: ${data.neighborhood}\n*UF*: ${data.state}`
+        `*CEP*: ${data.cep}\n*Logradouro*: ${data.logradouro}\n*Bairro*: ${data.bairro}\n*UF*: ${data.uf}`
       );
     } catch (error) {
       return msg.reply(`CEP não localizado!`);

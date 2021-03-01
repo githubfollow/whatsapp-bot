@@ -4,10 +4,9 @@ interface IResponse {
 
 interface IServerData {
   cep: string;
-  state: string;
-  city: string;
-  neighborhood: string;
-  street: string;
+  logradouro: string;
+  bairro: string;
+  uf: string;
 }
 
 export { IResponse, IServerData };
