@@ -1,3 +1,3 @@
 export default abstract class Command<T> {
-  abstract execute(message: T): Promise<any>;
+  abstract async execute(message: T): Promise<void>;
 }
