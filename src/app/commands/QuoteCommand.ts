@@ -35,7 +35,7 @@ export default class QuoteCommand {
           text += `@${participant.id.user} `;
         }
 
-        return chat.sendMessage(text, { mentions });
+        chat.sendMessage(text, { mentions });
       }
     });
   }
