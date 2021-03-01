@@ -1,6 +1,16 @@
 import axios from 'axios';
-import type { IResponse, IServerData } from '../interfaces/Cep';
-import type { Message } from 'whatsapp-web.js';
+import { IMessage } from '../interfaces/Message';
+
+interface IResponse {
+  data: IServerData;
+}
+
+interface IServerData {
+  cep: string;
+  logradouro: string;
+  bairro: string;
+  uf: string;
+}
 
 export default class EconomyCommand {
   cep: string;
@@ -8,7 +18,7 @@ export default class EconomyCommand {
     this.cep = cep;
   }
 
-  async execute(msg: Message) {
+  async execute(msg: IMessage) {
     const [_, setCep] = this.cep.split(' ');
 
     const chat = await msg.getChat();
